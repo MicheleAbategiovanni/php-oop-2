@@ -18,7 +18,7 @@ $productList = array_map(function ($product) {
 }, $elencoProdotti);
 
 
-var_dump($productList);
+// var_dump($productList);
 
 
 ?>
@@ -34,6 +34,7 @@ var_dump($productList);
     <title>Geppo E-commerce</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
@@ -43,10 +44,42 @@ var_dump($productList);
     </header>
 
     <main>
+        <section>
+            <div class="container py-5">
+                <h2>Lista di prodotti:</h2>
+
+                <div class="row row-cols-3 g-5">
+
+                    <?php foreach ($productList as $product) { ?>
+
+                        <div class="col">
+
+                            <div class="card" style="height: 100%">
+                                <img src="<?php echo $product->getimg() ?>" class="card-img-top" alt="">
+                                <div class="card-body ">
+                                    <h5 class="card-title"> <?php echo $product->getTitle() ?> </h5>
+                                    <h4> Categoria: <i class="fa-solid fs-4 <?php echo $product->getIconCategory() ?>"></i></h4>
+                                    <h6 class=""> Tipo: <?php echo $product->getProduct() ?> </h6>
+                                    <p class="card-text"> <?php echo $product->getTitle() ?> </p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-primary text-center"> <?php echo $product->getPrice() ?> € </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <?php } ?>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
-    
+
 </body>
 
 </html>

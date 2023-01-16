@@ -3,38 +3,38 @@
 $elencoProdotti = [
     [
         "category" => "Cani",
-        "product" => "cibo",
-        "img" => "img",
-        "title" => "Hi Duck Snack Dog Bastoncini con Anatra 350G",
+        "product" => "Cibo",
+        "img" => "https://picsum.photos/200",
+        "title" => "Snack Dog con Anatra 350G",
         "price" => "10.00",
-        "iconCategory" => "icon"
+        "iconCategory" => "fa-shield-dog"
     ], [
         "category" => "Cani",
-        "product" => "gioco",
-        "img" => "img",
+        "product" => "Gioco",
+        "img" => "https://picsum.photos/200",
         "title" => "Pollo di gomma",
         "price" => "11.00",
-        "iconCategory" => "icon"
+        "iconCategory" => "fa-shield-dog"
     ], [
         "category" => "Gatti",
-        "product" => "cibo",
-        "img" => "img",
+        "product" => "Cibo",
+        "img" => "https://picsum.photos/200",
         "title" => "Dentastix 56 pezzi",
         "price" => "29.99",
-        "iconCategory" => "icon"
+        "iconCategory" => "fa-shield-cat"
     ], [
         "category" => "Cani",
-        "product" => "cuccia",
-        "img" => "img",
+        "product" => "Cuccia",
+        "img" => "https://picsum.photos/200",
         "title" => "Cuccia a forma di tararuga",
         "price" => "22.00",
-        "iconCategory" => "icon"
+        "iconCategory" => "fa-shield-dog"
     ], [
         "category" => "Gatti",
-        "product" => "cuccia",
-        "img" => "img",
+        "product" => "Cuccia",
+        "img" => "https://picsum.photos/200",
         "title" => "Cuccia a forma di quadrupede",
         "price" => "1.50",
-        "iconCategory" => "icon"
+        "iconCategory" => "fa-shield-cat"
     ]
 ];
