@@ -18,7 +18,7 @@ $productList = array_map(function ($product) {
 }, $elencoProdotti);
 
 
- var_dump($productList);
+//  var_dump($productList);
 
 
 ?>
