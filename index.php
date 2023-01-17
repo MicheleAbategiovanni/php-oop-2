@@ -1,8 +1,8 @@
 <?php
 
 require_once "./classes/Product.php";
-require_once "./classes/Dogs.php";
-require_once "./classes/Cats.php";
+require_once "./classes/Dog.php";
+require_once "./classes/Cat.php";
 include "./db.php";
 
 
@@ -10,15 +10,15 @@ $productList = array_map(function ($product) {
     $toReturn = null;
 
     if ($product["category"] === "Cani") {
-        $toReturn = new Dogs($product["category"], $product["product"], $product["title"], $product["img"], $product["price"], $product["iconCategory"]);
+        $toReturn = new Dog($product["category"], $product["product"], $product["title"], $product["img"], $product["price"], $product["iconCategory"]);
     } else if ($product["category"] === "Gatti") {
-        $toReturn = new Cats($product["category"], $product["product"], $product["title"], $product["img"], $product["price"], $product["iconCategory"]);
+        $toReturn = new Cat($product["category"], $product["product"], $product["title"], $product["img"], $product["price"], $product["iconCategory"]);
     }
     return $toReturn;
 }, $elencoProdotti);
 
 
-// var_dump($productList);
+ var_dump($productList);
 
 
 ?>
